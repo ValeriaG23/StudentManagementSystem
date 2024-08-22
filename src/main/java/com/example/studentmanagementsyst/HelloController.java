@@ -44,10 +44,10 @@ public class HelloController {
         String firstName = firstNameField.getText();
         String lastName = lastNameField.getText();
         String id = idField.getText();
-        String presence = presenceComboBox.getValue(); // Obține valoarea selectată
+        String presence = presenceComboBox.getValue(); 
 
         if (!firstName.isEmpty() && !lastName.isEmpty() && !id.isEmpty()) {
-            Student student = new Student(firstName, lastName, id, presence); // Transmite prezența la constructor
+            Student student = new Student(firstName, lastName, id, presence); 
             studentList.add(student);
             clearFields();
         }
@@ -65,6 +65,6 @@ public class HelloController {
         firstNameField.clear();
         lastNameField.clear();
         idField.clear();
-        presenceComboBox.getSelectionModel().selectFirst(); // Resetează selecția ComboBox
+        presenceComboBox.getSelectionModel().selectFirst(); 
     }
 }
